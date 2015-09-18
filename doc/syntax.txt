@@ -1,0 +1,12 @@
+delay(5000) : auto-save()
+time=sys-time() : specialSave(time)
+ä line=[1] position=[] return : jump-to-line(line) jump-to-pos(position)
+{crtl shift j} {ctrl alt return} : startAllServices()
+
+----------------------
+ev -> function
+ev : [signal, stream]
+Signal : [keystroke, SysEvents, Terminator]
+Terminator : [keystroke, SysEvents]
+keystroke : [char, modifier ]
+stream : [Stream]
